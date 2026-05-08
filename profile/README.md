@@ -1,7 +1,6 @@
-<!-- Replace the src below with the official World Justice Project logo URL when ready. -->
 <p align="center">
   <a href="https://worldjusticeproject.org/">
-    <img src="https://worldjusticeproject.org/sites/default/files/wjp_logo_2018.png" alt="World Justice Project" width="320">
+    <img src="../wjp_logo_text.svg" alt="World Justice Project" width="320">
   </a>
 </p>
 
