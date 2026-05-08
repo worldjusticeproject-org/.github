@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">The World Justice Project</h1>
+<hr/>
 
 <p align="center">
   <em>Advancing the rule of law worldwide through data, research, and a global network of changemakers.</em>
