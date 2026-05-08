@@ -1,0 +1,89 @@
+name: 🐞 Bug report
+description: Report a defect or unexpected behavior in code, tools, or pipelines.
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report.
+        Please fill out the sections below as completely as you can — the more detail, the faster we can investigate.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have searched existing issues to make sure this isn't a duplicate.
+          required: true
+        - label: I have read the project's `README` and any relevant documentation.
+          required: true
+        - label: This is **not** a security vulnerability (those should be reported privately per the [Security Policy](https://github.com/WorldJusticeProject/.github/blob/main/SECURITY.md)).
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A clear, concise description of the bug.
+      placeholder: When I run `…`, I expected `…` but got `…`.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps that reliably trigger the bug.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened? Include error messages, logs, or screenshots.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: Release version, tag, or commit SHA where the bug occurs.
+      placeholder: "v1.2.3 or abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, language/runtime version, and any relevant package versions.
+      placeholder: |
+        - OS: macOS 14.5
+        - Python: 3.11.8
+        - Package versions: …
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help — related issues, screenshots, sample data, etc.
+    validations:
+      required: false

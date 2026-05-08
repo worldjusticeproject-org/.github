@@ -1,0 +1,62 @@
+name: 💡 Feature request
+description: Suggest a new feature, enhancement, or improvement.
+title: "[Feature]: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! Please describe the problem you're trying to solve and the change you'd like to see.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I have searched existing issues and discussions to make sure this isn't already proposed.
+          required: true
+        - label: This request is in scope for the project (it relates to the project's documented goals).
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve? Who benefits if it's solved?
+      placeholder: I'm trying to … but currently …
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or change you'd like. Include any APIs, schemas, or UX you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you consider, and why are they less suitable?
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and scope
+      description: How does this relate to WJP's mission? Are there methodological, data, or documentation implications?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Are you willing to contribute?
+      options:
+        - label: I'd be willing to open a pull request to implement this.
+          required: false
+        - label: I'd be willing to help test or review an implementation.
+          required: false

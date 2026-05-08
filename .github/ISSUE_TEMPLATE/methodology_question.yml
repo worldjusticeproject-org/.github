@@ -1,0 +1,51 @@
+name: 🔬 Methodology question
+description: Ask about how a WJP indicator, score, or research product is constructed.
+title: "[Methodology]: "
+labels: ["methodology", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for questions about **how WJP measures the rule of law** — survey design, expert questionnaires, scoring, weighting, normalization, aggregation, comparability across years, etc.
+
+        Before submitting, please review the methodology section of the relevant report — many questions are addressed there:
+        - [Rule of Law Index methodology](https://worldjusticeproject.org/rule-of-law-index/about)
+        - Other product methodologies are linked from each report's landing page.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which product?
+      options:
+        - WJP Rule of Law Index
+        - WJP Open Government Index
+        - WJP EUROVOICES
+        - Environmental Governance Indicators (LAC)
+        - Country-specific report (please specify below)
+        - Other (please specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your methodological question
+      description: What would you like to understand?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: How does this question come up in your work? (research, replication, journalism, policy analysis, classroom use, etc.)
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References reviewed
+      description: Which methodology documents, codebooks, or papers have you already consulted?
+    validations:
+      required: false

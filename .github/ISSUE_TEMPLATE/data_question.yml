@@ -1,0 +1,74 @@
+name: 📊 Data question or correction
+description: Ask a question about WJP data, or report a possible error in a published dataset or indicator.
+title: "[Data]: "
+labels: ["data", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for questions or possible errors related to **published WJP data** — for example, the Rule of Law Index, Open Government Index, EUROVOICES, Environmental Governance Indicators, or other datasets.
+
+        For questions about **methodology** (how an indicator is constructed, how scores are aggregated, etc.), please use the **Methodology question** template instead.
+
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: Which dataset?
+      options:
+        - WJP Rule of Law Index
+        - WJP Open Government Index
+        - WJP EUROVOICES
+        - Environmental Governance Indicators (LAC)
+        - Country-specific report (please specify below)
+        - Other (please specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: edition
+    attributes:
+      label: Edition / year
+      description: Which edition or publication year of the dataset are you referring to?
+      placeholder: "e.g., 2024"
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Country / jurisdiction (if applicable)
+      placeholder: "e.g., Mexico"
+    validations:
+      required: false
+
+  - type: input
+    id: indicator
+    attributes:
+      label: Factor / sub-factor / indicator (if applicable)
+      placeholder: "e.g., Factor 4: Fundamental Rights → 4.5"
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question or report
+      description: What would you like to ask, or what do you believe is incorrect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Links, citations, screenshots, or data extracts that support your question or correction.
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why does this matter?
+      description: How does this affect your use of the data, your research, or your understanding of the findings?
+    validations:
+      required: false

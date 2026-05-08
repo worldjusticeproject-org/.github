@@ -1,0 +1,17 @@
+# Adds a "Sponsor" button to repositories in this organization.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# The World Justice Project is a registered 501(c)(3) non-profit.
+# Donations support our work to advance the rule of law worldwide.
+custom: ["https://worldjusticeproject.org/donate"]
+
+# Uncomment and fill in if/when WJP enables additional channels:
+# github: [WorldJusticeProject]
+# open_collective: world-justice-project
+# patreon:
+# tidelift:
+# community_bridge:
+# liberapay:
+# issuehunt:
+# otechie:
+# ko_fi:

@@ -1,0 +1,23 @@
+# Disables the "Open a blank issue" link so reporters use one of the templates below.
+blank_issues_enabled: false
+
+contact_links:
+  - name: 🌐 World Justice Project Website
+    url: https://worldjusticeproject.org/
+    about: Learn about WJP, our research, and how to get in touch.
+
+  - name: 📊 WJP Rule of Law Index
+    url: https://worldjusticeproject.org/rule-of-law-index/
+    about: Country scores, rankings, methodology, and downloadable data for the Rule of Law Index.
+
+  - name: 💬 General questions and discussion
+    url: https://github.com/orgs/WorldJusticeProject/discussions
+    about: Use Discussions for open-ended questions, ideas, or community conversation.
+
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/WorldJusticeProject/.github/blob/main/SECURITY.md
+    about: Please report security issues privately following our Security Policy — not as a public issue.
+
+  - name: ✉️ Contact the WJP team
+    url: mailto:wjp@worldjusticeproject.org
+    about: For inquiries that don't fit any of the above.
