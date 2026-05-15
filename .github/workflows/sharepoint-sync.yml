@@ -1,0 +1,25 @@
+name: Sync to SharePoint
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Sync to SharePoint
+        uses: MarkusMcNugen/SharePoint-Mirror-Sync@v1.0.0
+        with:
+          file_path: "**/*"
+          host_name: "wjproject.sharepoint.com"
+          site_name: "research"
+          upload_path: "Programmatic/Data Analytics/5. Code/GitHub Mirror"
+          tenant_id: ${{ secrets.SHAREPOINT_TENANT_ID }}
+          client_id: ${{ secrets.SHAREPOINT_CLIENT_ID }}
+          client_secret: ${{ secrets.SHAREPOINT_CLIENT_SECRET }}
