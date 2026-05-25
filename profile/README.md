@@ -66,22 +66,6 @@ We welcome contributions from researchers, developers, and practitioners working
 
 If you are using WJP data or code in your own research, tools, or policy work, we'd love to hear about it — please reach out so we can showcase your work and learn from it.
 
-## Community and Discussions
-
-Have a question, an idea, or a use case to share? Use [GitHub Discussions](https://github.com/orgs/WorldJusticeProject/discussions) on individual repositories, or contact us directly via the channels below.
-
-## Contact
-
-- **General inquiries:** [wjp@worldjusticeproject.org](mailto:wjp@worldjusticeproject.org)
-- **Press and media:** [media@worldjusticeproject.org](mailto:media@worldjusticeproject.org)
-- **Newsletter and updates:** [worldjusticeproject.org/news](https://worldjusticeproject.org/news)
-
-Follow our work:
-[Website](https://worldjusticeproject.org/) ·
-[LinkedIn](https://www.linkedin.com/company/world-justice-project) ·
-[X / Twitter](https://twitter.com/TheWJP) ·
-[YouTube](https://www.youtube.com/user/worldjusticeproject)
-
 ## License
 
 Unless otherwise specified, code in our repositories is released under permissive open-source licenses (typically MIT or Apache 2.0), and data and reports are made available under [Creative Commons](https://creativecommons.org/) terms — see each repository's `LICENSE` file for details. The World Justice Project name, logos, and the **WJP Rule of Law Index®** are trademarks of the World Justice Project; please review our [Terms of Use](https://worldjusticeproject.org/about-us/terms-and-conditions) before redistributing branded materials.
